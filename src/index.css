@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black text-white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-2000 {
+  perspective: 2000px;
+}
+
+@keyframes floatingCard {
+  0%, 100% {
+    transform: rotateX(15deg) rotateY(25deg) translateY(0);
+  }
+  50% {
+    transform: rotateX(15deg) rotateY(25deg) translateY(-20px);
+  }
+}
+
+@keyframes floatingPhone {
+  0%, 100% {
+    transform: rotateX(-15deg) rotateY(-15deg) translateY(0);
+  }
+  50% {
+    transform: rotateX(-15deg) rotateY(-15deg) translateY(-20px);
+  }
+}
+
+.transform-gpu {
+  transform: translate3d(0, 0, 0);
+}

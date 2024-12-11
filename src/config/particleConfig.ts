@@ -1,0 +1,11 @@
+export const PARTICLE_CONFIG = {
+  COUNT: 60,
+  MIN_SIZE: 2,
+  MAX_SIZE: 4,
+  SPEED: 0.2,
+  MIN_OPACITY: 0.2,
+  MAX_OPACITY: 0.5,
+  CONNECTION_RADIUS: 150,
+  MOUSE_RADIUS: 150,
+  MOUSE_FORCE: 0.05,
+} as const;
